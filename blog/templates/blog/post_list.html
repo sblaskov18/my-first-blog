@@ -1,22 +1,33 @@
+{% load static %}
+
 <html>
 <head>
   <title>Sarah Goes to Oulu</title>
-  </head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
 
 <body>
   <div>
-  <h1><strong><a href="/">Sarah Goes to Oulu</a></strong></h1>
-  <h2>My journey continues...</h2>
+    <h1><strong><a href="/">Sarah Goes to Oulu</a></strong></h1>
+    <h2>My journey continues...</h2>
   </div>
   <br>
   <br>
 
+
+
+
+
   <div>
-  <p>published: 03.11.2018, 14.05</p>
-  <h3><a href="">The First Thing You Need to Know</a></h3>
-  <p>Follow me on Instagram <a href="https://www.instagram.com/sarahgoestooulu/">@sarahgoestooulu</a></p>
-<br>
-</div>
+    <p>published: 03.11.2018, 14.05</p>
+    <h3><a href="">The First Thing You Need to Know</a></h3>
+    <p>Follow me on Instagram <a href="https://www.instagram.com/sarahgoestooulu/">@sarahgoestooulu</a></p>
+
+    <br>
+  </div>
 
   {% for post in posts %}
   <div>
